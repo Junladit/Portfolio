@@ -64,7 +64,7 @@ export default function AboutSection() {
                   ทักษะและเทคโนโลยี
                 </span>
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 sm:gap-2">
                 {[
                   { name: "Next.js/React", icon: "✦" },
                   { name: "TypeScript", icon: "✦" },
@@ -78,12 +78,12 @@ export default function AboutSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className="flex items-center gap-3 bg-gray-900/60 hover:bg-gray-900/80 p-4 rounded-xl border border-gray-800 hover:border-blue-500/30 transition-all duration-300 group"
+                    className="flex items-center gap-3 bg-gray-900/60 hover:bg-gray-900/80 p-4 rounded-xl border border-gray-800 hover:border-blue-500/30 transition-all duration-300 group text-wrap: balance"
                   >
                     <div className="text-blue-400 text-xl group-hover:text-purple-400 transition-colors">
                       {skill.icon}
                     </div>
-                    <span className="group-hover:text-white transition-colors">{skill.name}</span>
+                    <span className="group-hover:text-white transition-colors text-sm sm:text-base break-words">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>

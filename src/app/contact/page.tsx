@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaFacebook, FaLine, FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
+import { FaFacebook, FaLine, FaEnvelope, FaGithub,  FaPhone } from 'react-icons/fa' //FaLinkedin
 import { FiSend } from 'react-icons/fi'
 import { SiUpwork } from 'react-icons/si'
 
@@ -49,7 +49,7 @@ export default function ContactSection() {
               icon={<FaEnvelope size={20} className="text-red-400" />}
               label="Email"
               href="mailto:you@example.com"
-              detail="you@example.com"
+              detail="namejunladit12@gmail.com"
             />
             <ContactLink
               icon={<FaPhone size={20} className="text-green-400" />}
@@ -77,12 +77,12 @@ export default function ContactSection() {
               Professional Networks
             </h3>
             
-            <ContactLink
+            {/* <ContactLink
               icon={<FaLinkedin size={20} className="text-blue-500" />}
               label="LinkedIn"
               href="https://linkedin.com/in/yourprofile"
               detail="linkedin.com/in/yourprofile"
-            />
+            /> */}
             <ContactLink
               icon={<FaGithub size={20} className="text-gray-300" />}
               label="GitHub"
@@ -111,12 +111,12 @@ export default function ContactSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <h4 className="text-xl font-medium mb-4 text-gray-300">Prefer a contact form?</h4>
+          {/* <h4 className="text-xl font-medium mb-4 text-gray-300">Go To Homepage</h4> */}
           <Link 
-            href="/contact-form" 
+            href="/" 
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full font-medium hover:opacity-90 transition"
           >
-            Go to Contact Form
+            Go To Homepage
           </Link>
         </motion.div>
       </div>
